@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script></head>
+<body>
+    
+    <header class="w-[100%] h-[100vh] mx-auto">
+        <nav class="flex w-[700px] justify-between mx-auto">
+         <input type="text" id="filterInput" class="w-[300px] h-[50px] border border-black rounded-[10px]">
+    <script>
+        document.getElementById('filterInput').addEventListener('input', (event) => {
+            displayItems(event.target.value);
+        });
+    </script>
+            <div class="flex gap-[10px]">
+                <button class="px-[5px] py-[5px] bg-black border shadow-[10px_10px_10px_rgba(0,0,0,0.1)] rounded-[10px] text-[#FFFFFF]" onclick=" darkmode()" id="Dark">Dark Mode</button>
+                <button class="px-[5px] py-[5px] bg-[#FFFFFF] border rounded-[10px]" onclick="lightmode()" id="light">light Mode</button>
+            </div>
+        </nav>
+
+        <div class="w-[700px] flex flex-wrap justify-center gap-[30px] mx-auto my-[20px]" id="os">
+
+        </div>
+    </header>
+
+
+    <script src="sckript.js"></script>
+</body>
+</html>
